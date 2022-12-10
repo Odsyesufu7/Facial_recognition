@@ -1,0 +1,140 @@
+# Nchọpụta ihu
+
+_Ịnwekwara ike ịgụ ụdị faịlụ a atụgharịrị [na Swahili](https://github/Odsyesufu7/Portfolio-Project-IoT_Cybersecurity/blob/master/README.md) na Asụsụ Naijiria atọ.
+
+Chọpụta ma jikwaa ihu sitere na Python ma ọ bụ site na ahịrị iwu nwere
+ọba akwụkwọ njirimara ihu kacha dị n'ụwa.
+
+Ewuru site na iji [dlib](http://dlib.net/) njirimara ihu ọhụụ nke nka
+wuru na mmụta miri emi. Ihe nlereanya ahụ nwere izi ezi nke 99.38% na
+[Ihu ndị akpọrọ n'ime ọhịa] dị ka akara aka.
+
+Nke a na-enyekwa ngwaọrụ ahịrị iwu 'face_recognition' dị mfe nke na-ahapụ
+ị na-eme njirimara ihu na nchekwa nke onyonyo sitere na ahịrị iwu!
+
+
+[![PyPI](https://img.shields.io/pypi/v/face_recognition.svg)](https://pypi.python.org/pypi/face_recognition)
+[![Ọnọdụ akwụkwọ](https://readthedocs.org/projects/face-recognition/badge/?version=latest)](http://face-recognition.readthedocs.io/en/latest/?badge=latest) )
+
+## Akụkụ
+
+#### Chọta ihu na foto
+
+Chọta ihu niile pụtara na eserese:
+
+![](https://cloud.githubusercontent.com/assets/896692/23625227/42c65360-025d-11e7-94ea-b12f28cb34b4.png)
+
+"Python
+mbubata ihu_recognition
+onyonyo = face_recognition.load_image_file("your_file.jpg")
+ihu_locations = ihu_recognition.face_locations(onyinyo)
+``
+
+#### Chọta ma megharịa atụmatụ ihu na foto
+
+Nweta ọnọdụ na ndepụta nke anya onye ọ bụla, imi, ọnụ na agba.
+
+![](https://cloud.githubusercontent.com/assets/896692/23625282/7f2d79dc-025d-11e7-8728-d8924596f8fa.png)
+
+"Python
+mbubata ihu_recognition
+onyonyo = face_recognition.load_image_file("your_file.jpg")
+face_landmarks_list = ihu_recognition.face_landmarks(onyinyo)
+``
+
+Ịchọta ọdịdị ihu dị oke uru maka ọtụtụ ihe dị mkpa. Ma ị nwekwara ike iji ya maka ihe nzuzu n'ezie
+dị ka itinye [dijitalụ etemeete] (chee 'Meitu'):
+
+![](https://cloud.githubusercontent.com/assets/896692/23625283/80638760-025d-11e7-80a2-1d2779f7ccab.png)
+
+#### Chọpụta ihu na foto
+
+Mara onye na-egosi na foto ọ bụla.
+
+![](https://cloud.githubusercontent.com/assets/896692/23625229/45e049b6-025d-11e7-89cc-8a71cf89e713.png)
+
+"Python
+mbubata ihu_recognition
+known_image = face_recognition.load_image_file("biden.jpg")
+unknown_image = face_recognition.load_image_file("unknown.jpg")
+
+biden_encoding = face_recognition.face_encodings(amaara_image)[0]
+unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
+
+nsonaazụ = face_recognition.compare_faces([biden_encoding], amaghị_encoding)
+``
+
+Ịnwere ike iji ọba akwụkwọ Python ndị ọzọ mee njirimara ihu ozugbo:
+
+![](https://cloud.githubusercontent.com/assets/896692/24430398/36f0e3f0-13cb-11e7-8258-4d0c9ce1e419.gif)
+
+Hụ [ihe atụ a](https://github.com/Odsyesufu7/Portfolio-Project-IoT_Cybersecurity/blob/master/examples/facerec_from_webcam_faster.py) maka koodu.
+
+## Ihe ngosi ntanetị
+
+Ngosi akwụkwọ ndetu Jupyter nke onye ọrụ nyere aka (anaghị akwado ọchịchị): [![Deepnote](https://beta.deepnote.org/buttons/try-in-a-jupyter-notebook.svg)](https://beta) .deepnote.org/launch?template=face_recognition)
+
+## Nwụnye
+
+### chọrọ
+
+   Python 3.3+ ma ọ bụ Python 2.7
+   * MacOS, Linux na Windows na-akwadoghị mana ọ na-arụkwa ọrụ.
+
+### Nhọrọ nwụnye:
+
+#### Wụnye na Mac ma ọ bụ Linux
+
+Nke mbụ, jide n'aka na ị tinyelarị dlib na Python bindings:
+
+   * [Etu esi etinye dlib site na isi mmalite na macOS ma ọ bụ Ubuntu](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf)
+  
+Mgbe ahụ, gbaa mbọ hụ na etinyere cmake:
+ 
+```brew install cmake``
+
+N'ikpeazụ, wụnye modul a site na pypi iji 'pip3' (ma ọ bụ 'pip2' maka Python 2):
+
+`` bash
+pip3 tinye face_recognition
+``
+
+N'aka nke ọzọ, ịnwere ike iji [Docker] (https://www.docker.com/) nwalee ọba akwụkwọ a, lee [ngalaba a](#deployment).
+
+
+
+#### Ịwụnye na bọọdụ Nvidia Jetson Nano
+
+  * [Jetson Nano ntuziaka nwụnye](https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python -a25cb8c891fd)
+    * Biko soro ntuziaka dị n'isiokwu a nke ọma. Enwere ahụhụ dị ugbu a na ọba akwụkwọ CUDA dị na Jetson Nano nke ga-eme ka ọbaakwụkwọ a daa n'ime nkịtị ma ọ bụrụ na ị naghị agbaso ntuziaka dị n'isiokwu ahụ iji kwuo otu ahịrị na dlib wee chịkọta ya.
+
+#### Ịwụnye na Raspberry Pi 2+
+
+   * [Raspberry Pi 2+ ntuziaka nwụnye]
+
+#### wụnye na FreeBSD
+
+`` bash
+pkg tinye eserese/py-face_recognition
+``
+
+#### wụnye na Windows
+
+Ọ bụ ezie na akwadoghị Windows n'ihu ọha, ndị ọrụ na-enyere aka etinyela ntuziaka maka otu esi etinye ọba akwụkwọ a:
+
+   * [@masoudr's Windows 10 ntuziaka nwụnye (dlib + face_recognition)]
+
+#### Ịwụnye ihe oyiyi igwe mebere ahazi nke ọma
+
+   * [Budata onyonyo VM ahaziri mbụ].
+
+## Ojiji
+
+### Iwu-Line Interface
+
+Mgbe ị rụnyere 'face_recognition', ị ga-enweta ahịrị iwu abụọ dị mfe
+mmemme:
+
+* ` ihu_mmata` - Mara ihu na foto ma ọ bụ nchekwa juputara maka
+    foto.
+* 'fac
