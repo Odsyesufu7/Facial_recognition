@@ -1,6 +1,6 @@
 # Face Recognition
 
-_You can also read a translated version of this file [in Yoruba](https://github.com/ageitgey/face_recognition/blob/master/README_Yoruba.md) or [in Igbo](https://github.com/ageitgey/face_recognition/blob/master/README_Igbo.md) or [in Swahili](https://github.com/m-i-k-i/face_recognition/blob/master/README_Swahili.md)._
+_You can also read a translated version of this file [in Swahili](https://github.com/m-i-k-i/face_recognition/blob/master/README_Swahili.md)._
 
 Recognize and manipulate faces from Python or from the command line with
 the world's simplest face recognition library.
