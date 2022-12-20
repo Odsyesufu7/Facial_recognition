@@ -27,9 +27,9 @@ setup(
     version='1.4.0',
     description="Recognize faces from Python or from the command line",
     long_description=readme + '\n\n' + history,
-    author="Adam Geitgey",
-    author_email='ageitgey@gmail.com',
-    url='https://github.com/ageitgey/face_recognition',
+    author="Oluwaseyi Yesufu",
+    author_email='syesufu2000@yahoo.com',
+    url='https://github.com/Odsyesufu7/Portfolio-Project-IoT_Cybersecurity',
     packages=[
         'face_recognition',
     ],
