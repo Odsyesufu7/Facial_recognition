@@ -12,8 +12,6 @@ Computers find it harder to recognize faces than beat Grandmasters at chess. It 
 
 Thanks to camera technology improvements, mapping processes, machine learning, and processing speeds, facial recognition has come of age.
 
- 
-
 2D technology
 Most systems use 2D camera technology, which creates a flat image of a face, and maps ‘nodal points’ (size/shape of eyes, nose, cheekbones, etc.). The system then calculates the nodes’ relative position and converts the data into a numerical code. The recognition algorithms search a stored database of faces for a match.
 
@@ -21,7 +19,6 @@ Most systems use 2D camera technology, which creates a flat image of a face, and
 
 Q&A facial recognition
 
- 
 Liveness detection
 One way to overcome these flaws is with liveness detection.
 
@@ -30,8 +27,6 @@ These systems will look for indicators of a non-live image, such as inconsistent
 They may ask the user to blink or move. They are needed to defeat criminals who try to cheat facial recognition systems by using photographs or masks.
 
 Another critical advance is the ‘deep convolutional neural network.’
-
- 
 
 Machine learning
 This is a type of machine learning in which a model finds patterns in image data.
@@ -73,8 +68,6 @@ NIST computer scientist Patrick Grother says: “The accuracy gains stem from th
 
 Liveness detection systems will look for indicators of a non-live image such as inconsistent features between foreground and background. They may ask the user to blink or move
 
- 
-
 Further confirmation of the tech improvement came in the Department of Homeland Security’s Biometric Technology Rally in 2018. In its test, Gemalto’s Live Face Identification System (LFIS) scored a 99.44% acquisition rate in under five seconds, compared to the average of 65%.
 
 Facial recognition vs. face detection: a significant difference
@@ -104,12 +97,9 @@ Demonstrators, rioters, and journalists have done part of the face capture step 
 He used facial detection to extract faces from 200K images.
 It’s up to the FBI to investigate, transform the portraits (digital pixels to vectors) and potentially do the face match with existing databases and identify the individuals (with an AFIS / ABIS system). 
  
-
 Today it's considered to be the most natural of all biometric measurements. 
 
 And for a good reason – we recognize ourselves not by looking at our fingerprints or irises, for example, but by looking at our faces. 
-
- 
 
 Face match
 
@@ -139,4 +129,3 @@ Facial biometrics continues to be the preferred biometric benchmark.
 That's because it's easy to deploy and implement. There is no physical interaction with the end-user. 
 
 Moreover, face detection and face match processes for verification/identification are speedy.
-
