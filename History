@@ -1,0 +1,142 @@
+Facial recognition is more than 50 years old.
+
+A research team led by Woodrow W Bledsoe ran experiments between 1964 and 1966 to see whether ‘programming computers’ could recognize human faces.
+
+The team used a rudimentary scanner to map the person’s hairline, eyes, and nose. The task of the computer was to find matches.
+
+It wasn’t successful.
+
+Bledsoe said: “The face recognition problem is made difficult by the great variability in head rotation and tilt, lighting intensity and angle, facial expression, aging, etc.”
+
+Computers find it harder to recognize faces than beat Grandmasters at chess. It would be many years before these problems were overcome.
+
+Thanks to camera technology improvements, mapping processes, machine learning, and processing speeds, facial recognition has come of age.
+
+ 
+
+2D technology
+Most systems use 2D camera technology, which creates a flat image of a face, and maps ‘nodal points’ (size/shape of eyes, nose, cheekbones, etc.). The system then calculates the nodes’ relative position and converts the data into a numerical code. The recognition algorithms search a stored database of faces for a match.
+
+2D technology works well in stable, well-lit conditions such as passport control. But it is less effective in darker spaces and cannot deliver good results when the subjects move around. It is easy to spoof with a photograph.
+
+Q&A facial recognition
+
+ 
+Liveness detection
+One way to overcome these flaws is with liveness detection.
+
+These systems will look for indicators of a non-live image, such as inconsistent features between foreground and background.
+
+They may ask the user to blink or move. They are needed to defeat criminals who try to cheat facial recognition systems by using photographs or masks.
+
+Another critical advance is the ‘deep convolutional neural network.’
+
+ 
+
+Machine learning
+This is a type of machine learning in which a model finds patterns in image data.
+
+It deploys a network of artificial neurons that imitates the functioning of the human brain.
+
+In effect, the network behaves like a black box.
+
+It is given input values whose results are not yet known. It then makes checks to ensure the network is producing the expected result. When this is not the case, the system makes adjustments until it is correctly configured and can systematically produce the expected outputs.
+
+Today, previously advanced processes are finding their way into mass-market devices.
+
+3D technology
+For example, Apple uses 3D camera tech to power the thermal infrared-based Face ID feature in its iPhone X. Thermal IR imagery maps the patterns of faces derived primarily from the pattern of superficial blood vessels under the skin.
+
+Apple also sends the captured face pattern to a ‘secure enclave’ in the device. This ensures the authentication happens locally and that the patterns are not accessible by Apple.
+
+Measurements and accuracy
+Three criteria assess facial recognition systems.
+
+1. False-positive (aka false acceptance)
+﻿This describes when a system erroneously makes an incorrect match. The number should be as low as possible.
+
+2. False-negative (aka false rejection)
+With a false negative, a genuine user is not matched to his or her profile. This number should also below.
+
+3. True positive
+This describes when an enrolled user is correctly matched to his or her profile. This number should be high.
+
+These three measurements are conveyed in percentages. So, let’s say an entry system assesses 1,000 people a day. If five non-approved people are allowed in, the false positive rate is five in 1,000. That’s one in 200 or 0.5%.
+
+So, what percentages do the current systems achieve?
+
+The National Institute of Standards and Technology (NIST) regularly tests multiple systems to search a database of 26.6 million photos.
+
+Its 2018 test found that just 0.2% of searches failed to match the correct image, compared with a 4% failure rate in 2014. That’s a 20x improvement over four years.
+
+NIST computer scientist Patrick Grother says: “The accuracy gains stem from the integration, or complete replacement, of prior approaches with those based on deep convolutional neural networks. As such, face recognition has undergone an industrial revolution.”
+
+Liveness detection systems will look for indicators of a non-live image such as inconsistent features between foreground and background. They may ask the user to blink or move
+
+ 
+
+Further confirmation of the tech improvement came in the Department of Homeland Security’s Biometric Technology Rally in 2018. In its test, Gemalto’s Live Face Identification System (LFIS) scored a 99.44% acquisition rate in under five seconds, compared to the average of 65%.
+
+Facial recognition vs. face detection: a significant difference
+Though ‘facial recognition’ is generally used as a catch-all term, this is not entirely accurate. There is a crucial distinction between facial recognition and face detection.
+
+Facial recognition describes the process of scanning a face and then matching it to the same person on a database. This is the approach used to unlock phones or authenticate a person entering a building.
+
+Face detection is when a system tries to establish that a face is present. Social media companies use face detection to filter and organize images in large catalogs of photos.
+
+The tools used to train the two systems are different. The desired levels of accuracy vary too. Facial recognition for identification purposes needs to score more highly than any system used to organize images merely.
+
+The confusion between the two processes has caused some controversy.
+
+In 2019, a researcher revealed that Amazon’s systems were much better at classifying the gender of light-skinned men than dark-skinned women.
+
+This led to fears that surveillance systems could make more false matches for some ethnic groups.
+
+How facial recognition works
+Facial recognition is the process of identifying or verifying the identity of a person using their face. It captures, analyzes, and compares patterns based on the person's facial details.
+
+The face detection process is an essential step in detecting and locating human faces in images and videos.
+ The face capture process transforms analog information (a face) into a set of digital information (data or vectors) based on the person's facial features.
+The face match process verifies if two faces belong to the same person.
+Let’s illustrate this 3-step process with a recent example.
+A student from the greater Washington DC area used an open-source facial extraction app to detect and deduplicate over 6,000 images of faces from 827 videos posted on Parler during the 6 January event outside and inside the Capitol building (source: Wired 20 January 2021.) He created a website called Faces of the Riot, where these portraits are displayed.
+Demonstrators, rioters, and journalists have done part of the face capture step with their smartphones (analog face to the digital picture).
+He used facial detection to extract faces from 200K images.
+It’s up to the FBI to investigate, transform the portraits (digital pixels to vectors) and potentially do the face match with existing databases and identify the individuals (with an AFIS / ABIS system). 
+ 
+
+Today it's considered to be the most natural of all biometric measurements. 
+
+And for a good reason – we recognize ourselves not by looking at our fingerprints or irises, for example, but by looking at our faces. 
+
+ 
+
+Face match
+
+Before we go any further, let's quickly define two keywords: "identification" and "authentication."
+
+Face recognition data to identify and verify
+Biometrics are used to identify and authenticate a person using a set of recognizable and verifiable data unique and specific to that person.
+
+For more on biometrics definition, visit our web dossier on biometrics.
+
+Identification answers the question: "Who are you?"
+
+Authentication answers the question: "Are you really who you say you are?"
+
+Stay with us. Here are some examples : 
+
+In the case of facial biometrics, a 2D or 3D sensor "captures" a face. It then transforms it into digital data by applying an algorithm before comparing the image captured to those held in a database.
+ 
+These automated systems can be used to identify or check an individual's identity in just a few seconds based on their facial features (geometry): spacing of the eyes, bridge of the nose, the contour of the lips, ears, chin, etc.
+They can even do this in the middle of a crowd and within dynamic and unstable environments. 
+Owners of the iPhone X have already been introduced to facial recognition technology. 
+Of course, other signatures via the human body also exist, such as fingerprints, iris scans, voice recognition, digitization of veins in the palm, and behavioral measurements. 
+
+Why face recognition, then? 
+Facial biometrics continues to be the preferred biometric benchmark. 
+
+That's because it's easy to deploy and implement. There is no physical interaction with the end-user. 
+
+Moreover, face detection and face match processes for verification/identification are speedy.
+
