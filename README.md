@@ -363,7 +363,7 @@ If you want to create a standalone executable that can run without the need to i
 
 ## Articles and Guides that cover `face_recognition`
 
-- My article on how Face Recognition works: [Modern Face Recognition with Deep Learning](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78)
+- My article on how Face Recognition works: [Modern Face Recognition with Deep Learning](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae)
   - Covers the algorithms and how they generally work
 - [Face recognition with OpenCV, Python, and deep learning](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) by Adrian Rosebrock
   - Covers how to use face recognition in practice
@@ -375,7 +375,7 @@ If you want to create a standalone executable that can run without the need to i
 ## How Face Recognition Works
 
 If you want to learn how face location and recognition work instead of
-depending on a black box library, [read my article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
+depending on a black box library, [read my article](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae).
 
 ## Caveats
 
