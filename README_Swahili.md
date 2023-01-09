@@ -14,7 +14,169 @@ unafanya utambuzi wa uso kwenye folda ya picha kutoka kwa safu ya amri!
 
 
 [![PyPI](https://img.shields.io/pypi/v/face_recognition.svg)](https://pypi.python.org/pypi/face_recognition)
-[![Hali ya Kujenga](https://github.com/ageitgey/face_recognition/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/ageitgey/face_recognition/actions?query =mtiririko wa kazi%3ACI)
+[![Hali ya Kujenga](https://github.com/xamples/face_recognition_knn.py)
+* [Jifunze picha nyingi kwa kila mtu kisha utambue nyuso kwa kutumia SVM](https://github.com/Odsyesufu7/face_recognition/blob/master/examples/face_recognition_svm.py)]
+
+## Kuunda Kitekelezo Kinachojitegemea
+Ikiwa ungependa kuunda kitekelezo cha pekee ambacho kinaweza kufanya kazi bila hitaji la kusakinisha `python` au `face_recognition`, unaweza kutumia [PyInstaller](https://github.com/pyinstaller/pyinstaller). Hata hivyo, inahitaji usanidi fulani maalum ili kufanya kazi na maktaba hii. Tazama [toleo hili](https://github.com/Odsyesufu7/face_recognition/issues/357) jinsi ya kulifanya.
+
+## Makala na Miongozo inayoshughulikia `utambuzi_wa_uso`
+
+- Makala yangu kuhusu jinsi Utambuzi wa Uso unavyofanya kazi: [Kutambua Uso wa Kisasa kwa Kujifunza kwa Kina](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae)
+   - Inashughulikia algoriti na jinsi zinavyofanya kazi kwa ujumla
+- [Kutambua uso kwa OpenCV, Python, na kujifunza kwa kina](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia utambuzi wa uso katika mazoezi
+- [Utambuzi wa Uso wa Raspberry Pi](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia hii kwenye Raspberry Pi
+- [Kuunganishwa kwa uso na Chatu](https://www.pyimagesearch.com/2018/07/09/face-clustering-with-python/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kuunganisha picha kiotomatiki kulingana na anayeonekana katika kila picha kwa kutumia mafunzo yasiyosimamiwa
+
+## Jinsi Utambuzi wa Uso Hufanya Kazi
+
+Ikiwa ungependa kujifunza jinsi eneo la uso na utambuzi hufanya kazi badala ya
+kulingana na maktaba ya kisanduku cheusi, [soma makala yangu](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae).
+
+##Tahadhari
+
+* Mtindo wa utambuzi wa uso umefunzwa kwa watu wazima na haufanyi kazi vizuri sana kwa watoto. Inaelekea kuchanganya
+   kuinua watoto kwa urahisi kwa kutumia kiwango cha ulinganishaji chaguo-msingi cha 0.6.
+* Usahihi unaweza kutofautiana kati ya makabila. Tafadhali angalia [ukurasa huu wa wiki](https://github.com/Odsyesufu7/face_recognition/wiki/Face-Recognition-Accuracy-Problems#question-face-recognition-works-well-with-european-individuals-but-jumla- usahihi-ni-chini-na-watu-wa-asian) kwa maelezo zaidi.
+
+## <a name="deployment">Kutumwa kwa Wapangishi wa Wingu (Heroku, AWS, n.k)</a>
+
+Kwa kuwa `utambuzi_wa_uso` unategemea `dlib` ambayo imeandikwa kwa C++, inaweza kuwa gumu kupeleka programu.
+kuitumia kwa mtoa huduma wa kupangisha wingu kama vile Heroku au AWS.
+
+Ili kurahisisha mambo, kuna mfano wa Dockerfile kwenye repo hili ambao unaonyesha jinsi ya kuendesha programu iliyojengwa nayo
+`face_recognition` katika chombo cha [Docker](https://www.docker.com/). Pamoja na hayo, unapaswa kuwa na uwezo wa kupeleka
+kwa huduma yoyote inayotumia picha za Docker.
+
+Unaweza kujaribu picha ya Docker ndani ya nchi kwa kukimbia: `docker-compose up --build`
+
+Pia kuna [picha kadhaa za Docker zilizojengwa awali.](docker/README.md)
+
+Watumiaji wa Linux walio na GPU (viendeshaji >= 384.81) na [Nvidia-Docker](https://github.com/NVIDIA/nvidia-docker) iliyosakinishwa wanaweza kutekeleza mfano kwenye GPU: Fungua [docker-compose.yml] (docker-compose.yml) na uondoe maoni ya mistari ya `dockerfile: Dockerfile.gpu` na `muda wa kukimbia: nvidia`.
+
+##Je una matatizo?
+
+## Asante
+
+* Shukrani nyingi kwa [Davis King]
+   kwa kuunda dlib na kwa kutoa mafunzo ya utambuzi wa vipengele vya uso na miundo ya usimbaji wa nyuso
+   kutumika katika maktaba hii. Kwa habari zaidi juu ya ResNet inayowezesha usimbaji wa uso, angalia
+   [chapisho lake la blogi](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html).
+* Asante kwa kila mtu ambaye anafanya kazi kwenye maktaba zote nzuri za sayansi ya data ya Python kama vile numpy, scipy, scikit-picha,
+   mto, nk, nk ambayo hufanya aina hii ya vitu kuwa rahisi na ya kufurahisha katika Python.
+* Shukrani kwa [Cookiecutter][audreyr/cookiecutter-pypackage](cookiecutter-pypackage) kiolezo cha mradi
+   kwa kufanya ufungaji wa mradi wa Python uvumilie zaidi.](xamples/face_recognition_knn.py)
+* [Jifunze picha nyingi kwa kila mtu kisha utambue nyuso kwa kutumia SVM](https://github.com/Odsyesufu7/face_recognition/blob/master/examples/face_recognition_svm.py)
+
+## Kuunda Kitekelezo Kinachojitegemea
+Ikiwa ungependa kuunda kitekelezo cha pekee ambacho kinaweza kufanya kazi bila hitaji la kusakinisha `python` au `face_recognition`, unaweza kutumia [PyInstaller](https://github.com/pyinstaller/pyinstaller). Hata hivyo, inahitaji usanidi fulani maalum ili kufanya kazi na maktaba hii. Tazama [toleo hili](xamples/face_recognition_knn.py)
+* [Jifunze picha nyingi kwa kila mtu kisha utambue nyuso kwa kutumia SVM](https://github.com/Odsyesufu7/face_recognition/blob/master/examples/face_recognition_svm.py)
+
+## Kuunda Kitekelezo Kinachojitegemea
+Ikiwa ungependa kuunda kitekelezo cha pekee ambacho kinaweza kufanya kazi bila hitaji la kusakinisha `python` au `face_recognition`, unaweza kutumia [PyInstaller](https://github.com/pyinstaller/pyinstaller). Hata hivyo, inahitaji usanidi fulani maalum ili kufanya kazi na maktaba hii. Tazama [toleo hili](https://github.com/Odsyesufu7/face_recognition/issues/357) jinsi ya kulifanya.
+
+## Makala na Miongozo inayoshughulikia `utambuzi_wa_uso`
+
+- Makala yangu kuhusu jinsi Utambuzi wa Uso unavyofanya kazi: [Kutambua Uso wa Kisasa kwa Kujifunza kwa Kina](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae)
+   - Inashughulikia algoriti na jinsi zinavyofanya kazi kwa ujumla
+- [Kutambua uso kwa OpenCV, Python, na kujifunza kwa kina](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia utambuzi wa uso katika mazoezi
+- [Utambuzi wa Uso wa Raspberry Pi](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia hii kwenye Raspberry Pi
+- [Kuunganishwa kwa uso na Chatu](https://www.pyimagesearch.com/2018/07/09/face-clustering-with-python/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kuunganisha picha kiotomatiki kulingana na anayeonekana katika kila picha kwa kutumia mafunzo yasiyosimamiwa
+
+## Jinsi Utambuzi wa Uso Hufanya Kazi
+
+Ikiwa ungependa kujifunza jinsi eneo la uso na utambuzi hufanya kazi badala ya
+kulingana na maktaba ya kisanduku cheusi, [soma makala yangu](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae).
+
+##Tahadhari
+
+* Mtindo wa utambuzi wa uso umefunzwa kwa watu wazima na haufanyi kazi vizuri sana kwa watoto. Inaelekea kuchanganya
+   kuinua watoto kwa urahisi kwa kutumia kiwango cha ulinganishaji chaguo-msingi cha 0.6.
+* Usahihi unaweza kutofautiana kati ya makabila. Tafadhali angalia [ukurasa huu wa wiki](https://github.com/Odsyesufu7/face_recognition/wiki/Face-Recognition-Accuracy-Problems#question-face-recognition-works-well-with-european-individuals-but-jumla- usahihi-ni-chini-na-watu-wa-asian) kwa maelezo zaidi.
+
+## <a name="deployment">Kutumwa kwa Wapangishi wa Wingu (Heroku, AWS, n.k)</a>
+
+Kwa kuwa `utambuzi_wa_uso` unategemea `dlib` ambayo imeandikwa kwa C++, inaweza kuwa gumu kupeleka programu.
+kuitumia kwa mtoa huduma wa kupangisha wingu kama vile Heroku au AWS.
+
+Ili kurahisisha mambo, kuna mfano wa Dockerfile kwenye repo hili ambao unaonyesha jinsi ya kuendesha programu iliyojengwa nayo
+`face_recognition` katika chombo cha [Docker](https://www.docker.com/). Pamoja na hayo, unapaswa kuwa na uwezo wa kupeleka
+kwa huduma yoyote inayotumia picha za Docker.
+
+Unaweza kujaribu picha ya Docker ndani ya nchi kwa kukimbia: `docker-compose up --build`
+
+Pia kuna [picha kadhaa za Docker zilizojengwa awali.](docker/README.md)
+
+Watumiaji wa Linux walio na GPU (viendeshaji >= 384.81) na [Nvidia-Docker](https://github.com/NVIDIA/nvidia-docker) iliyosakinishwa wanaweza kutekeleza mfano kwenye GPU: Fungua [docker-compose.yml] (docker-compose.yml) na uondoe maoni ya mistari ya `dockerfile: Dockerfile.gpu` na `muda wa kukimbia: nvidia`.
+
+##Je una matatizo?
+
+## Asante
+
+* Shukrani nyingi kwa [Davis King]
+   kwa kuunda dlib na kwa kutoa mafunzo ya utambuzi wa vipengele vya uso na miundo ya usimbaji wa nyuso
+   kutumika katika maktaba hii. Kwa habari zaidi juu ya ResNet inayowezesha usimbaji wa uso, angalia
+   [chapisho lake la blogi](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html).
+* Asante kwa kila mtu ambaye anafanya kazi kwenye maktaba zote nzuri za sayansi ya data ya Python kama vile numpy, scipy, scikit-picha,
+   mto, nk, nk ambayo hufanya aina hii ya vitu kuwa rahisi na ya kufurahisha katika Python.
+* Shukrani kwa [Cookiecutter][audreyr/cookiecutter-pypackage](cookiecutter-pypackage) kiolezo cha mradi
+   kwa kufanya ufungaji wa mradi wa Python uvumilie zaidi.) jinsi ya kulifanya.
+
+## Makala na Miongozo inayoshughulikia `utambuzi_wa_uso`
+
+- Makala yangu kuhusu jinsi Utambuzi wa Uso unavyofanya kazi: [Kutambua Uso wa Kisasa kwa Kujifunza kwa Kina](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae)
+   - Inashughulikia algoriti na jinsi zinavyofanya kazi kwa ujumla
+- [Kutambua uso kwa OpenCV, Python, na kujifunza kwa kina](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia utambuzi wa uso katika mazoezi
+- [Utambuzi wa Uso wa Raspberry Pi](https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kutumia hii kwenye Raspberry Pi
+- [Kuunganishwa kwa uso na Chatu](https://www.pyimagesearch.com/2018/07/09/face-clustering-with-python/) na Adrian Rosebrock
+   - Inashughulikia jinsi ya kuunganisha picha kiotomatiki kulingana na anayeonekana katika kila picha kwa kutumia mafunzo yasiyosimamiwa
+
+## Jinsi Utambuzi wa Uso Hufanya Kazi
+
+Ikiwa ungependa kujifunza jinsi eneo la uso na utambuzi hufanya kazi badala ya
+kulingana na maktaba ya kisanduku cheusi, [soma makala yangu](https://medium.com/@oyesufu7/iot-cybersecurity-pathway-to-verification-and-identification-7b6ed95b07ae).
+
+##Tahadhari
+
+* Mtindo wa utambuzi wa uso umefunzwa kwa watu wazima na haufanyi kazi vizuri sana kwa watoto. Inaelekea kuchanganya
+   kuinua watoto kwa urahisi kwa kutumia kiwango cha ulinganishaji chaguo-msingi cha 0.6.
+* Usahihi unaweza kutofautiana kati ya makabila. Tafadhali angalia [ukurasa huu wa wiki](https://github.com/Odsyesufu7/face_recognition/wiki/Face-Recognition-Accuracy-Problems#question-face-recognition-works-well-with-european-individuals-but-jumla- usahihi-ni-chini-na-watu-wa-asian) kwa maelezo zaidi.
+
+## <a name="deployment">Kutumwa kwa Wapangishi wa Wingu (Heroku, AWS, n.k)</a>
+
+Kwa kuwa `utambuzi_wa_uso` unategemea `dlib` ambayo imeandikwa kwa C++, inaweza kuwa gumu kupeleka programu.
+kuitumia kwa mtoa huduma wa kupangisha wingu kama vile Heroku au AWS.
+
+Ili kurahisisha mambo, kuna mfano wa Dockerfile kwenye repo hili ambao unaonyesha jinsi ya kuendesha programu iliyojengwa nayo
+`face_recognition` katika chombo cha [Docker](https://www.docker.com/). Pamoja na hayo, unapaswa kuwa na uwezo wa kupeleka
+kwa huduma yoyote inayotumia picha za Docker.
+
+Unaweza kujaribu picha ya Docker ndani ya nchi kwa kukimbia: `docker-compose up --build`
+
+Pia kuna [picha kadhaa za Docker zilizojengwa awali.](docker/README.md)
+
+Watumiaji wa Linux walio na GPU (viendeshaji >= 384.81) na [Nvidia-Docker](https://github.com/NVIDIA/nvidia-docker) iliyosakinishwa wanaweza kutekeleza mfano kwenye GPU: Fungua [docker-compose.yml] (docker-compose.yml) na uondoe maoni ya mistari ya `dockerfile: Dockerfile.gpu` na `muda wa kukimbia: nvidia`.
+
+##Je una matatizo?
+
+## Asante
+
+* Shukrani nyingi kwa [Davis King]
+   kwa kuunda dlib na kwa kutoa mafunzo ya utambuzi wa vipengele vya uso na miundo ya usimbaji wa nyuso
+   kutumika katika maktaba hii. Kwa habari zaidi juu ya ResNet inayowezesha usimbaji wa uso, angalia
+   [chapisho lake la blogi](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html).
+* Asante kwa kila mtu ambaye anafanya kazi kwenye maktaba zote nzuri za sayansi ya data ya Python kama vile numpy, scipy, scikit-picha,
+   mto, nk, nk ambayo hufanya aina hii ya vitu kuwa rahisi na ya kufurahisha katika Python.
+* Shukrani kwa [Cookiecutter][audreyr/cookiecutter-pypackage](cookiecutter-pypackage) kiolezo cha mradi
+   kwa kufanya ufungaji wa mradi wa Python uvumilie zaidi./actions?query =mtiririko wa kazi%3ACI)
 [![Hali ya Hati](https://readthedocs.org/projects/face-recognition/badge/?version=latest)](http://face-recognition.readthedocs.io/en/latest/?badge=latest )
 
 ## Vipengele
